@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Lector de CSV</title>
+</head>
+<body>
+    <h2>Proyecto final: Gestor de CSV</h2>
+
+    <div id="menu">
+        <button onclick="mostrarSeccion('leer')">Leer Datos</button>
+        <button onclick="mostrarSeccion('agregar')">Agregar Datos</button>
+        <button onclick="mostrarSeccion('borrar')">Borrar Datos</button>
+    </div>
+
+    <div id="leer" class="seccion">
+        <table id="tablaCSV">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Correo</td>
+                    <td>Edad</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!--  Toda la información la traemos desde el JS -->
+            </tbody>
+        </table>
+        <input type="file" accept=".csv" id="csvFileInput">
+    </div>
+
+    <div id="agregar" class="seccion">
+        <h3>Agregar Datos</h3>
+        <form id="formularioAgregar">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" required>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <h3>Datos Añadidos</h3>
+        <table id="tablaAgregar">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Correo</td>
+                    <td>Edad</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!--  Toda la información la traemos desde el JS -->
+            </tbody>
+        </table>
+        <button onclick="descargarCSV()">Descargar CSV</button>
+    </div>
+
+    <div id="borrar" class="seccion">
+        <h3>Borrar Datos</h3>
+        <table id="tablaBorrar">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Correo</td>
+                    <td>Edad</td>
+                    <td>Acción</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Toda la información la traemos desde el JS -->
+            </tbody>
+        </table>
+        <button onclick="descargarCSV()">Descargar CSV</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
