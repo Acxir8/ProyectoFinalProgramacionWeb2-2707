@@ -1,4 +1,4 @@
-/* Estilo general */
+/* Estilo del cuerpo */
 body {
     font-family: Arial, sans-serif;
     color: #ffffff;
@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Encabezado principal */
+/* Titulo*/
 h2 {
     color: #F20519;
     text-align: center;
@@ -24,12 +24,10 @@ h2 {
 #menu button {
     border-radius: 20px;
     background-color: #D91448;
-    border: none;
     color: white;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 #menu button:hover {
@@ -49,12 +47,12 @@ h2 {
     background-color: white;
 }
 
-/* Secciones */
+/*Modulos*/
 .seccion {
-    display: none;
     padding: 20px;
 }
 
+/* Ocultamos las secciones a parte de la inicial, para mantener limpia la pantalla con solo las seleccionadas*/
 #leer, #agregar, #borrar {
     display: none;
 }

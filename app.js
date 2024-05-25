@@ -67,7 +67,7 @@ function descargarCSV() {
     const blob = new Blob([contenidoCSV], { type: 'text/csv;charset=utf-8;' });
     const enlace = document.createElement('a');
     enlace.href = URL.createObjectURL(blob);
-    enlace.download = 'datos_actualizados.csv';
+    enlace.download = 'datos.csv';
     enlace.style.display = 'none';
     document.body.appendChild(enlace);
     enlace.click();
