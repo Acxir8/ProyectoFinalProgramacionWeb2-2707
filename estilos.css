@@ -1,0 +1,143 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado principal */
+h2 {
+    color: #F20519;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Menú */
+#menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #40010D;
+}
+
+#menu button {
+    border-radius: 20px;
+    background-color: #D91448;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#menu button:hover {
+    background-color: #F2798F;
+}
+
+#csvFileInput {
+    border-radius: 20px;
+    background-color: #D91448;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+#csvFileInput button{
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* Secciones */
+.seccion {
+    display: none;
+    padding: 20px;
+}
+
+#leer, #agregar, #borrar {
+    display: none;
+}
+
+#leer {
+    display: block;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #D99E32;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #D91448;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #40010D;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #6C232E;
+}
+
+/* Formularios */
+form {
+    background-color: #40010D;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #D99E32;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #D91448;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #F2798F;
+}
+
+/* Botón de descarga */
+button {
+    border-radius: 20px;
+    background-color: #D91448;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #F2798F;
+}
